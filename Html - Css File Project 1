@@ -1,0 +1,106 @@
+<!--To develop a responsive Company Member Team Page using HTML and CSS, I'll provide a step-by-step guide, including a sample code for HTML and CSS. Since I can't view the "designed-1" file, I'll create a general structure for a team page that you can adjust according to the provided design reference.
+
+HTML Structure
+First, let's set up the HTML structure for the team page.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Member Team Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Team</h1>
+    </header>
+    <main>
+        <section class="team-members">
+            <div class="member">
+                <img src="member1.jpg" alt="Member 1">
+                <h2>John Doe</h2>
+                <p>CEO</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="member">
+                <img src="member2.jpg" alt="Member 2">
+                <h2>Jane Smith</h2>
+                <p>CTO</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- Add more members as needed -->
+        </section>
+    </main>
+</body>
+</html>
+<!--Explanation
+HTML Structure:
+
+The HTML document starts with a standard <!DOCTYPE html> declaration.
+The head section includes meta tags for character set and viewport settings, and a link to the external CSS file.
+The body section includes a header with the page title and a main section containing team members in a section element.-->
+/**CSS Styles
+Next, let's create a CSS file (styles.css) to style the team page and ensure responsiveness.*/
+
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Team Section Styles */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.member {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.member img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS Styles:
+
+Basic styles for the body, header, and h1 tag to set the font, margin, padding, background color, and text color.
+The .team-members class uses flexbox to arrange the team members. It ensures the layout is flexible and responsive.
+Each .member class is styled with a white background, some padding, margin, border-radius for rounded corners, and a box-shadow for a subtle shadow effect.
+The img tag inside .member is styled to be circular and centered with some margin at the bottom.
+Media queries ensure that on smaller screens (max-width: 768px), the .team-members flex direction changes to column for better readability on mobile devices.*/
+
